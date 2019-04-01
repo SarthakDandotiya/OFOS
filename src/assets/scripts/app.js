@@ -45,7 +45,7 @@ app.init = () => {
   app.setLoggedInClass(!!token);
   if (token) {
     // Set token to the http client default headers.
-    httpClient.defaults.headers = {token: token.id};
+    httpClient.defaults.headers = { token: token.id };
 
     // Get shopping cart and update shopping cart number of items.
     shoppingCart.getCart(httpClient)

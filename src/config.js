@@ -24,7 +24,7 @@ environments.staging = {
 		from: 'postmaster@sandboxd9bf66827ccf4abebbfdbfe0f2d5a1ba.mailgun.org'
 	},
 	templateGlobals: {
-		appName: 'Pizza Delivery'
+		appName: 'OFOS'
 	}
 };
 
