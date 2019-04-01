@@ -39,14 +39,14 @@ router.routes = {
     controller: cartController,
   },
 
-  'api/orders':{
+  'api/orders': {
     controller: orderController,
   },
 
   // Front-End specific routes.
   '': {
     controller: templateController,
-    data: {'head.title': 'Pizza Delivery'},
+    data: { 'head.title': 'OrderFood' },
   },
 
   'assets/*': {
@@ -55,37 +55,37 @@ router.routes = {
 
   'user/account/create': {
     controller: templateController,
-    data: {'head.title': 'Create Account'},
+    data: { 'head.title': 'Create Account' },
   },
 
   'user/account/edit': {
     controller: templateController,
-    data: {'head.title': 'Edit Account'},
+    data: { 'head.title': 'Edit Account' },
   },
 
   'user/session/create': {
     controller: templateController,
-    data: {'head.title': 'Login'},
+    data: { 'head.title': 'Login' },
   },
 
   'user/cart/read': {
     controller: templateController,
-    data: {'head.title': 'Shopping Cart'},
+    data: { 'head.title': 'Shopping Cart' },
   },
 
   'user/order/success': {
     controller: templateController,
-    data: {'head.title': 'Order has been paid'},
+    data: { 'head.title': 'Order has been paid' },
   },
 
   'user/order/create': {
     controller: templateController,
-    data: {'head.title': 'Checkout'},
+    data: { 'head.title': 'Checkout' },
   },
 
   'menu/list': {
     controller: templateController,
-    data: {'head.title': 'Menu List'},
+    data: { 'head.title': 'Menu List' },
   },
 };
 
