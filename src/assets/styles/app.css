@@ -2,24 +2,58 @@ li.loggedIn,
 li.loggedOut,
 a.loggedIn,
 a.loggedOut {
-    display: none;
+	display: none;
 }
 
 body.loggedIn li.loggedOut,
 body.loggedOut li.loggedIn,
 body.loggedIn a.loggedOut,
 body.loggedOut a.loggedIn {
-    display: none;
+	display: none;
 }
 
 body.loggedIn li.loggedIn,
 body.loggedOut li.loggedOut,
 body.loggedIn a.loggedIn,
 body.loggedOut a.loggedOut {
-    display: block;
+	display: block;
 }
 
 .formError,
 .formSuccess {
-    display: none;
+	display: none;
+}
+
+body {
+	/* background-image: url('../images/bg2.jpg');
+	background-size: cover;
+	position: fixed;
+    background-repeat: no-repeat; */
+	background-color: blanchedalmond;
+}
+
+/* Customification */
+
+/* .imp {
+	background-color: #ff5462 !important;
+} */
+
+.jumbotron {
+	background-color: #ffc66f !important;
+}
+
+.bg-light {
+	background-color: #ffc66f !important;
+	/* border-bottom: 3px solid #ffc66f; */
+}
+
+.navbar {
+	/* width: 75%;
+	position: fixed;
+	z-index: 100; */
+	border-radius: 0 0 8px 8px;
+}
+
+table tr {
+	background-color: #ffc66f !important;
 }

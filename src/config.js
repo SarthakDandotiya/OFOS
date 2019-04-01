@@ -10,7 +10,7 @@ environments.staging = {
 	httpPort: 3000,
 	environmentName: 'staging',
 	hashingSecret: 'thisIsASecret',
-	tokenLifetime: 24 * 60 * 60,
+	tokenLifetime: 1000 * 60 * 60,
 	stripe: {
 		host: 'api.stripe.com',
 		secretKey: 'sk_test_rqn5uYU1NhNGDg91RR9fuvyQ00K3skiNXx'
