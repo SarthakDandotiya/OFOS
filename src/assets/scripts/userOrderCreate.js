@@ -8,13 +8,11 @@ userOrderCreate.preloadData = async () => {
 
 	// Get shopping cart total amount element.
 	const orderTotalContainer = document.getElementById('orderTotal');
-	orderTotalContainer.innerHTML = `$${shoppingCart.cart.total}`;
+	orderTotalContainer.innerHTML = `₹${shoppingCart.cart.total}`;
 };
 
 // Callback that is being called once userOrderCreate is successfully submit.
-userOrderCreate.formSuccessProcessor = ({
-	detail: { formId, requestPayload, responsePayload }
-}) => {
+userOrderCreate.formSuccessProcessor = ({ detail: {} }) => {
 	// If forms saved successfully and they have success messages, show them.
 	document.querySelector('#userOrderCreate .formSuccess').style.display =
 		'block';

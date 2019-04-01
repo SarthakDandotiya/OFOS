@@ -48,7 +48,7 @@ userCartRead.preloadData = async () => {
           <b>${cartItem.name}</b>
         </td>
         <td class="text-left">
-          <span class="badge badge-light">$${cartItem.price}</span>
+          <span class="badge badge-light">₹${cartItem.price}</span>
         </td>
         <td>
           <input type="number" class="form-control quantity" value="${
@@ -94,7 +94,7 @@ userCartRead.preloadData = async () => {
         <td></td>
         <td class="text-left"></td>
         <td class="text-left">
-          <h5>$${shoppingCart.cart.total}</h5>
+          <h5>₹${shoppingCart.cart.total}</h5>
         </td>
         <td></td>
         <td class="text-right">
