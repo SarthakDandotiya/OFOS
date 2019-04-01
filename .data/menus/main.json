@@ -11,7 +11,7 @@
 	{ "id": 5, "name": "Steak", "price": 420, "image": "Steak.png" },
 	{ "id": 6, "name": "Full Turkey", "price": 725, "image": "turkey.png" },
 	{ "id": 7, "name": "Pankakes", "price": 125, "image": "pank.gif" },
-	{ "id": 8, "name": "Seven cheeses", "price": 19.45, "image": "" },
+	{ "id": 8, "name": "Egg Curry", "price": 85, "image": "eggcurry.png" },
 	{ "id": 9, "name": "BBQ Pizza", "price": 250, "image": "pizza2.png" },
 	{ "id": 10, "name": "Margherita", "price": 145.75, "image": "pizza1.png" }
 ]
