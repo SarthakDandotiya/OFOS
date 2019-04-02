@@ -13,7 +13,7 @@ const helpCommand = (inputString) => {
     'exit': 'Kill the CLI (and the rest of the application)',
     'man': 'Show this help page',
     'help': 'Alis of the "man" command',
-    'menus': 'Show the list of available menu items (pizzas)',
+    'menus': 'Show the list of available menu items',
     'orders': 'View all the recent orders in the system (orders placed in the last 24 hours)',
     'order --{orderId}': 'Lookup the details of a specific order by order ID',
     'users': 'View all the users who have signed up in the last 24 hours',
@@ -33,7 +33,7 @@ const helpCommand = (inputString) => {
 
     // Get colored key string.
     const value = commands[key];
-    let line = `\x1b[33m${key}\x1b[0m`;
+    let line = `\x1b[33m${ key }\x1b[0m`;
 
     // Add padding.
     const padding = commandPadding - line.length;
