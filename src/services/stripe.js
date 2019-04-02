@@ -24,7 +24,7 @@ const stripe = {};
  * @param {string} [description] - An arbitrary string which you can attach to a Charge object.
  * @return {Promise<boolean>}
  */
-stripe.charge = async ({amount, currency, source, metadata = {}, description = ''}) => {
+stripe.charge = async ({ amount, currency, source, metadata = {}, description = '' }) => {
   // Promisify https.request() function.
   return new Promise((resolve, reject) => {
     // Check that all required fields are provided.
@@ -53,13 +53,14 @@ stripe.charge = async ({amount, currency, source, metadata = {}, description = '
       hostname: config.stripe.host,
       method: 'POST',
       path: '/v1/charges',
-      auth: `${config.stripe.secretKey}:`,
+      auth: `${ config.stripe.secretKey }:`,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': Buffer.byteLength(stringPayload),
       },
     };
 
+    let bogus = 0;
     // Instantiate the request object.
     const request = https.request(requestDetails, (response) => {
       // Grab the status of the sent request.
@@ -68,7 +69,9 @@ stripe.charge = async ({amount, currency, source, metadata = {}, description = '
       if (status === 200 || status === 201) {
         resolve();
       } else {
-        reject(new Error(`Payment has failed with status ${status}`));
+        // reject(new Error(`Payment has failed with status ${status}`));
+        bogus++;
+        console.log(bogus);
       }
     });
 

@@ -12,7 +12,7 @@ const helpCommand = (inputString) => {
   const commands = {
     'exit': 'Kill the CLI (and the rest of the application)',
     'man': 'Show this help page',
-    'help': 'Alis of the "man" command',
+    'help': 'Alias of the "man" command',
     'menus': 'Show the list of available menu items',
     'orders': 'View all the recent orders in the system (orders placed in the last 24 hours)',
     'order --{orderId}': 'Lookup the details of a specific order by order ID',
@@ -21,7 +21,7 @@ const helpCommand = (inputString) => {
   };
 
   cliHelper.horizontalLine();
-  cliHelper.centered('CLI Manual');
+  cliHelper.centered('Admin - OFOS');
   cliHelper.horizontalLine();
   cliHelper.verticalSpace(2);
 
